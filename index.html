@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
     <title>Code Quiz</title>
 </head>
 
@@ -11,9 +12,63 @@
 <body>
     <div class ="outer-wrapper">
         <!-- section for timer and score -->
-        <div class="top-layer"></div>
-        <button>View High score</button>
-        <p>Timer: 00:00</p>
+        <div class="top-layer">
+            <button>View High score</button>
+            <p id="timer">Time:<span id="timer">120</span></p>
+        </div>
+    
+
+        <div class="inner-container">
+            <!-- header for quiz intro -->
+            <header class="quiz-intro">
+                <h1>Welcome to the Quiz!</h1>
+                <p>You have 2 minutes to answer all questions</p>
+                <button>Start Quiz!</button>
+
+            </header>
+
+        <!-- quiz content/questions, end screen...will be invisible by default...activated by listeners -->
+            <main>
+                <section class="question-screen">
+                    <h2>Question Asked</h2>
+                    <ul> 
+                        <!-- apply JavaScript -->
+                        <li><button>Choices</button></li>
+                        <li><button>Choices</button></li>
+                        <li><button>Choices</button></li>
+                        <li><button>Choices</button></li>
+                    </ul>
+                </section>
+
+                <section class="quiz-end">
+                    <h2>All Done!</h2>
+                    <p>Your final score is: 00</p>
+                    <div>
+                        <label for="">Enter initials:</label>
+                        <input type="text">
+                        <button>Submit</button>
+                    </div> 
+                </section>
+
+                <section class="highscores-screen">
+                    <h2>Highscores</h2>
+                    <ol>
+                        <!-- apply JavaScript -->
+                        <li>Initials - score</li>
+                        <li>Initials - score</li>
+                        <li>Initials - score</li>
+                    </ol>
+                    <!-- add event listeners in JavaScript for go back and clear -->
+                    <button>Go Back</button>
+                    <button>Clear Highscores</button>
+
+
+
+                </section>
+
+            </main>
+        </div>
+
     </div>
 
 
